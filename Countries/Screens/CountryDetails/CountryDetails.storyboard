@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iEs-En-fNR">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Country Details View Controller-->
+        <scene sceneID="6Zm-A0-j7t">
+            <objects>
+                <viewController storyboardIdentifier="CountryDetailsViewController" id="iEs-En-fNR" customClass="CountryDetailsViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YSb-2E-vBj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xwB-qv-245">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-Lc-eg0">
+                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hBS-ye-oF3">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BWo-mg-pcB" userLabel="Label Container">
+                                            <rect key="frame" x="8" y="8" width="304" height="84"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afghanistan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKV-Ac-cvL" userLabel="Name Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="96.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Southern Asia, Asia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3W-Hq-w6j" userLabel="Region Label">
+                                                    <rect key="frame" x="0.0" y="24.5" width="140.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Dt7-oX-fwy" userLabel="Population Area Container">
+                                                    <rect key="frame" x="0.0" y="48" width="145.5" height="36"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population 27657145" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGD-Ma-dFF" userLabel="Population Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="145.5" height="18"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area 652230" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-rG-LVl" userLabel="Area Label">
+                                                            <rect key="frame" x="0.0" y="18" width="90" height="18"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BWo-mg-pcB" secondAttribute="bottom" id="GaC-g2-C8G"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BWo-mg-pcB" secondAttribute="trailing" id="Ulc-z6-pom"/>
+                                        <constraint firstItem="BWo-mg-pcB" firstAttribute="leading" secondItem="hBS-ye-oF3" secondAttribute="leadingMargin" id="sAX-2k-igx"/>
+                                        <constraint firstItem="BWo-mg-pcB" firstAttribute="top" secondItem="hBS-ye-oF3" secondAttribute="topMargin" id="ue5-yN-Deq"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4W1-Lc-eg0" firstAttribute="leading" secondItem="YSb-2E-vBj" secondAttribute="leading" id="Taw-4U-PjE"/>
+                            <constraint firstAttribute="bottom" secondItem="4W1-Lc-eg0" secondAttribute="bottom" id="ThC-kV-9oW"/>
+                            <constraint firstItem="xwB-qv-245" firstAttribute="top" secondItem="YSb-2E-vBj" secondAttribute="top" id="flh-bU-Zop"/>
+                            <constraint firstItem="xwB-qv-245" firstAttribute="leading" secondItem="YSb-2E-vBj" secondAttribute="leading" id="fqb-pb-QTd"/>
+                            <constraint firstAttribute="bottom" secondItem="xwB-qv-245" secondAttribute="bottom" id="mKx-MC-ABB"/>
+                            <constraint firstAttribute="trailing" secondItem="xwB-qv-245" secondAttribute="trailing" id="nea-wT-4WB"/>
+                            <constraint firstAttribute="trailing" secondItem="4W1-Lc-eg0" secondAttribute="trailing" id="oa1-e4-noa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IiC-EZ-6mH"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="areaLabel" destination="5xW-rG-LVl" id="iBe-Ap-L7j"/>
+                        <outlet property="mapView" destination="xwB-qv-245" id="hLP-zO-Kbh"/>
+                        <outlet property="nameLabel" destination="AKV-Ac-cvL" id="ZkZ-ZM-FNV"/>
+                        <outlet property="populationLabel" destination="uGD-Ma-dFF" id="5bJ-dP-vPf"/>
+                        <outlet property="regionLabel" destination="D3W-Hq-w6j" id="f4F-he-POw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kx-zm-XDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-183.80281690140845"/>
+        </scene>
+    </scenes>
+</document>
