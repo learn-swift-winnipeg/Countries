@@ -8,7 +8,6 @@ class CountriesViewController: UIViewController {
     
     // MARK: - Stored Properties
     
-    private var countriesDatasource = Providers.countriesDatasource
     private var countries: [CountryWithNameRegionAndSubregionOnly] = []
     
     // MARK: - Lifecycle
@@ -30,7 +29,7 @@ class CountriesViewController: UIViewController {
     // MARK: - Fetching
     
     private func fetchCountriesAndUpdateUI() {
-        countriesDatasource.fetchCountries(resultQueue: .main) { result in
+        Providers.countriesDatasource.fetchCountries(resultQueue: .main) { result in
             switch result {
             case .failure(let error):
                 self.present(error: error)
@@ -58,7 +57,7 @@ class CountriesViewController: UIViewController {
     }
     
     private func presentDetails(for country: CountryWithNameRegionAndSubregionOnly) {
-        countriesDatasource.fetchCountry(named: country.name, resultQueue: .main) { result in
+        Providers.countriesDatasource.fetchCountry(named: country.name, resultQueue: .main) { result in
             switch result {
             case .failure(let error):
                 self.present(error: error)
