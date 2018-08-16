@@ -19,7 +19,7 @@ class CountryDetailsViewController: UIViewController {
             
             nameText = country.name
             regionText = "\(country.subregion), \(country.region)"
-            populationText = "Population: \(country.population)"
+            populationText = "\(country.population) people"
             areaText = "\(country.area) sq km"
         }
     }
