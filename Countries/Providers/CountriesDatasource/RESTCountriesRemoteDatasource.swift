@@ -17,24 +17,18 @@ class RESTCountriesRemoteDatasource: CountriesDatasource {
     {
         let url = URL(string: "https://restcountries.eu/rest/v2/all?fields=name;region;subregion")!
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            do {
-                guard error == nil else { throw error! }
-                guard let httpResponse = response as? HTTPURLResponse else {
-                    throw Error.failedWithError("Failed to access response as httpResponse")
-                }
-                guard (200...299).contains(httpResponse.statusCode) else {
-                    throw Error.failedWithError("Non-200 http status code received: \(httpResponse.statusCode)")
-                }
-                guard let data = data else {
-                    throw Error.failedWithError("Failed to access data in response.")
-                }
-                
-                let countries = try JSONDecoder().decode([CountryWithNameRegionAndSubregionOnly].self, from: data)
-                resultQueue.async { resultHandler( .success(countries) ) }
-                
-            } catch {
+        URLSession.shared.dataTask(with: url, resultQueue: .main) { result in
+            switch result {
+            case .failure(let error):
                 resultQueue.async { resultHandler( .failure(error) ) }
+                
+            case .success(let data):
+                do {
+                    let countries = try JSONDecoder().decode([CountryWithNameRegionAndSubregionOnly].self, from: data)
+                    resultQueue.async { resultHandler( .success(countries) ) }
+                } catch {
+                    resultQueue.async { resultHandler( .failure(error) ) }
+                }
             }
         }.resume()
     }
@@ -69,36 +63,5 @@ class RESTCountriesRemoteDatasource: CountriesDatasource {
                 }
             }
         }.resume()
-    }
-}
-
-extension URLSession {
-    private enum Error: Swift.Error {
-        case failedWithError(String)
-    }
-    
-    func dataTask(
-        with url: URL,
-        resultQueue: DispatchQueue,
-        resultHandler: @escaping (AsyncResult<Data>) -> Void) -> URLSessionDataTask
-    {
-        return self.dataTask(with: url) { (data, response, error) in
-            do {
-                guard error == nil else { throw error! }
-                guard let httpResponse = response as? HTTPURLResponse else {
-                    throw Error.failedWithError("Failed to access response as httpResponse")
-                }
-                guard (200...299).contains(httpResponse.statusCode) else {
-                    throw Error.failedWithError("Non-200 http status code received: \(httpResponse.statusCode)")
-                }
-                guard let data = data else {
-                    throw Error.failedWithError("Failed to access data in response.")
-                }
-                resultQueue.async { resultHandler( .success(data) ) }
-                
-            } catch {
-                resultQueue.async { resultHandler( .failure(error) ) }
-            }
-        }
     }
 }

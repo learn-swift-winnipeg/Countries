@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00107D672125CF3C0064C231 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00107D662125CF3C0064C231 /* URLSession.swift */; };
 		004BFF872121D4AD0059A478 /* CommandLineExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF862121D4AD0059A478 /* CommandLineExtension.swift */; };
 		004BFF8A2121E54F0059A478 /* LoadableFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF892121E54F0059A478 /* LoadableFromStoryboard.swift */; };
 		004BFF8C2121E5610059A478 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF8B2121E5610059A478 /* CountryDetailsViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00107D662125CF3C0064C231 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		004BFF862121D4AD0059A478 /* CommandLineExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLineExtension.swift; sourceTree = "<group>"; };
 		004BFF892121E54F0059A478 /* LoadableFromStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableFromStoryboard.swift; sourceTree = "<group>"; };
 		004BFF8B2121E5610059A478 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				004BFF862121D4AD0059A478 /* CommandLineExtension.swift */,
 				004BFFA2212202CA0059A478 /* DispatchQueue.swift */,
+				00107D662125CF3C0064C231 /* URLSession.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				004BFF9D2121EA280059A478 /* CountryCellConfiguration.swift in Sources */,
 				00934D7A2121CC0F00D5354C /* AppDelegate.swift in Sources */,
 				004BFF872121D4AD0059A478 /* CommandLineExtension.swift in Sources */,
+				00107D672125CF3C0064C231 /* URLSession.swift in Sources */,
 				004BFF972121E9950059A478 /* Countries.swift in Sources */,
 				004BFFA12121EB290059A478 /* LocalMockCountriesDatasource.swift in Sources */,
 				004BFF952121E96C0059A478 /* CountriesDatasource.swift in Sources */,
