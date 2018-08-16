@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00107D672125CF3C0064C231 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00107D662125CF3C0064C231 /* URLSession.swift */; };
+		00107D6F2125DE0E0064C231 /* CountriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00107D6E2125DE0E0064C231 /* CountriesUITests.swift */; };
 		004BFF872121D4AD0059A478 /* CommandLineExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF862121D4AD0059A478 /* CommandLineExtension.swift */; };
 		004BFF8A2121E54F0059A478 /* LoadableFromStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF892121E54F0059A478 /* LoadableFromStoryboard.swift */; };
 		004BFF8C2121E5610059A478 /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF8B2121E5610059A478 /* CountryDetailsViewController.swift */; };
@@ -27,8 +28,21 @@
 		00934D842121CC1200D5354C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00934D822121CC1200D5354C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00107D712125DE0E0064C231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00934D6E2121CC0F00D5354C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00934D752121CC0F00D5354C;
+			remoteInfo = Countries;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		00107D662125CF3C0064C231 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		00107D6C2125DE0E0064C231 /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00107D6E2125DE0E0064C231 /* CountriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITests.swift; sourceTree = "<group>"; };
+		00107D702125DE0E0064C231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		004BFF862121D4AD0059A478 /* CommandLineExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandLineExtension.swift; sourceTree = "<group>"; };
 		004BFF892121E54F0059A478 /* LoadableFromStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableFromStoryboard.swift; sourceTree = "<group>"; };
 		004BFF8B2121E5610059A478 /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00107D692125DE0E0064C231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00934D732121CC0F00D5354C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00107D6D2125DE0E0064C231 /* CountriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00107D6E2125DE0E0064C231 /* CountriesUITests.swift */,
+				00107D702125DE0E0064C231 /* Info.plist */,
+			);
+			path = CountriesUITests;
+			sourceTree = "<group>";
+		};
 		004BFF852121D49C0059A478 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				00934D782121CC0F00D5354C /* Countries */,
+				00107D6D2125DE0E0064C231 /* CountriesUITests */,
 				00934D772121CC0F00D5354C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				00934D762121CC0F00D5354C /* Countries.app */,
+				00107D6C2125DE0E0064C231 /* CountriesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +218,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00107D6B2125DE0E0064C231 /* CountriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00107D732125DE0E0064C231 /* Build configuration list for PBXNativeTarget "CountriesUITests" */;
+			buildPhases = (
+				00107D682125DE0E0064C231 /* Sources */,
+				00107D692125DE0E0064C231 /* Frameworks */,
+				00107D6A2125DE0E0064C231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00107D722125DE0E0064C231 /* PBXTargetDependency */,
+			);
+			name = CountriesUITests;
+			productName = CountriesUITests;
+			productReference = 00107D6C2125DE0E0064C231 /* CountriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		00934D752121CC0F00D5354C /* Countries */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00934D882121CC1200D5354C /* Build configuration list for PBXNativeTarget "Countries" */;
@@ -213,6 +263,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jeffrey Fulton";
 				TargetAttributes = {
+					00107D6B2125DE0E0064C231 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 00934D752121CC0F00D5354C;
+					};
 					00934D752121CC0F00D5354C = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -232,11 +286,19 @@
 			projectRoot = "";
 			targets = (
 				00934D752121CC0F00D5354C /* Countries */,
+				00107D6B2125DE0E0064C231 /* CountriesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		00107D6A2125DE0E0064C231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00934D742121CC0F00D5354C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +313,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		00107D682125DE0E0064C231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00107D6F2125DE0E0064C231 /* CountriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00934D722121CC0F00D5354C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +344,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		00107D722125DE0E0064C231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00934D752121CC0F00D5354C /* Countries */;
+			targetProxy = 00107D712125DE0E0064C231 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		00934D7D2121CC0F00D5354C /* Countries.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -294,6 +372,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		00107D742125DE0E0064C231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = CountriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.CountriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Countries;
+			};
+			name = Debug;
+		};
+		00107D752125DE0E0064C231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DN5KQR8W8;
+				INFOPLIST_FILE = CountriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.CountriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Countries;
+			};
+			name = Release;
+		};
 		00934D862121CC1200D5354C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +563,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00107D732125DE0E0064C231 /* Build configuration list for PBXNativeTarget "CountriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00107D742125DE0E0064C231 /* Debug */,
+				00107D752125DE0E0064C231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00934D712121CC0F00D5354C /* Build configuration list for PBXProject "Countries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
