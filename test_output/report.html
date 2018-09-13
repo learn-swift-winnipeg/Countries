@@ -112,6 +112,8 @@
         <section id="counters">
           <h2 id="test-count"><span class="number">1</span> tests</h2>
           
+            <h2 id="fail-count"><span class="number">1</span> failures</h2>
+          
         </section>
         <section id="segment-bar">
           <a id="all-segment" onclick="selectSegment(this);" class="selected">All</a><a id="failing-segment" onclick="selectSegment(this);">Failing</a><a id="passing-segment" onclick="selectSegment(this);">Passing</a>
@@ -121,7 +123,7 @@
     <section id="test-suites">
       
         
-        <section class="test-suite passing" id="CountriesUITests.CountriesUITests">
+        <section class="test-suite failing" id="CountriesUITests.CountriesUITests">
           <section class="heading" onclick="toggleTests(this);">
             <h3 class="title">CountriesUITests.CountriesUITests</h3>
           </section>
@@ -129,14 +131,26 @@
             <table>
             
               
-              <tr class="test passing "  onclick="toggleDetails('testCountryDetailsDisplayedOnTap');">
+              <tr class="test failing "  onclick="toggleDetails('testCountryDetailsDisplayedOnTap');">
                 <td>
-                  
-                    <h3 class="time">27.490s</h3>
                   
                 </td>
                 <td><h3 class="title">testCountryDetailsDisplayedOnTap</h3></td>
               </tr>
+              
+                <tr class="details failing testCountryDetailsDisplayedOnTap">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">Element Window cannot request screenshot data because it does not exist</section>
+                    
+                    
+                      <section class="test-detail snippet"></section>
+                      <section class="test-detail">CountriesUITests.swift:55</section>
+                    
+                    
+                  </td>
+                </tr>
               
             
             </table>

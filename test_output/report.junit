@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='CountriesUITests.xctest' tests='1' failures='0'>
-  <testsuite name='CountriesUITests.CountriesUITests' tests='1' failures='0'>
-    <testcase classname='CountriesUITests.CountriesUITests' name='testCountryDetailsDisplayedOnTap' time='27.490'/>
+<testsuites name='CountriesUITests.xctest' tests='1' failures='1'>
+  <testsuite name='CountriesUITests.CountriesUITests' tests='1' failures='1'>
+    <testcase classname='CountriesUITests.CountriesUITests' name='testCountryDetailsDisplayedOnTap'>
+      <failure message='Element Window cannot request screenshot data because it does not exist'>CountriesUITests.swift:55</failure>
+    </testcase>
   </testsuite>
 </testsuites>

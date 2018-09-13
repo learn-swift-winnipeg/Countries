@@ -14,9 +14,26 @@ class Fastfile: LaneFile {
 		// add actions here: https://docs.fastlane.tools/actions
 	}
     
+    func allLane() {
+        devLane()
+        qaLane()
+        uitLane()
+        //productionLane()
+    }
+    
+    func devLane() {
+        desc("Dev Environment - to ship for developers")
+        gym(scheme: "Countries Dev")
+    }
+    
     func qaLane() {
         desc("Quality Assurance Environment - to ship for testers")
         scan(scheme: "Countries Quality Assurance")
+    }
+    
+    func uitLane() {
+        desc("Automated UI Tests")
+        scan(scheme: "Countries UI Test")
     }
     
     func productionLane() {
