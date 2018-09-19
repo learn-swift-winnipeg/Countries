@@ -15,7 +15,12 @@ class CountryDetailsViewController: UIViewController {
         
         init(country: CountryWithFullDetails) {
             let distance = country.area.squareRoot() * 1300
-            mapRegion = MKCoordinateRegionMakeWithDistance(country.coordinate, distance, distance)
+            
+            mapRegion = MKCoordinateRegion(
+                center: country.coordinate,
+                latitudinalMeters: distance,
+                longitudinalMeters: distance
+            )
             
             nameText = country.name
             regionText = "\(country.subregion), \(country.region)"
